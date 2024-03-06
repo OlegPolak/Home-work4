@@ -105,14 +105,14 @@
 
 /**5 */
 
-const num = prompt("Введіть любе трьохзначне число");
+// const num = prompt("Введіть любе трьохзначне число");
 
-let arr = String(num).split('');
-console.log(arr);
-let sum = 0;
-for (let digit of arr) {
-    sum += Number(digit);
-}
-console.log(sum);
-alert(sum)
+// let arr = String(num).split('');
+// console.log(arr);
+// let sum = 0;
+// for (let digit of arr) {
+//     sum += Number(digit);
+// }
+// console.log(sum);
+// alert(sum)
 
