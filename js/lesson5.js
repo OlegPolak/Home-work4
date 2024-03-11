@@ -83,12 +83,35 @@
 // 2) cherry 58, 1,3/75.4
 // 3) jrange 89. 3,4/302.6
 
-// price
-// weight
-// cost
+const goods = {
+    logInfo: function (goods, price, quantity) {
+        console.group('Info:');
+        console.log(`Goods is ${goods}`);
+        console.log(`Price is ${price}`);
+        console.log(`Quantity is ${quantity}`);
+        console.groupEnd();
+    }
+};
 
-// const goods= {
-//     showItem() {
-//         console.log(`Товар ${name} Вартість ${cost}`);
-//     }
-// };
+goods.logInfo.apply( '',['banana', 30, 4.5]);
+goods.logInfo.apply( '',['cherry', 58, 1.3]);
+goods.logInfo.apply('', ['orange', 89, 3.4]);
+
+
+
+const goods2 = {
+    logInfo: function (goods, cost) {
+        console.group('Info:');
+        console.log(`Goods is ${goods}`);
+        console.log(`Cost is ${cost}`);
+        console.groupEnd();
+    }
+};
+
+goods2.logInfo.apply( '',['banana', (30*4.5)]);
+goods2.logInfo.apply( '',['cherry', (58*1.3)]);
+goods2.logInfo.apply( '',['orange', (89*3.4)]);
+
+
+
+
