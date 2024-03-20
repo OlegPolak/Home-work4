@@ -1,0 +1,42 @@
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text{
+    font-size:  100px;
+    text-align: center;
+    margin-bottom:  20px;
+}
+
+.btn{ 
+    background-color: blue;
+    color: antiquewhite;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    box-shadow: 3px 3px 5px 0 gray;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.tree span:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+.tree span {
+    cursor: pointer; 
+}
+
+ul{
+    margin: 15px 0;
+}
